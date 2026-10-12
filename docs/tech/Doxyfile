@@ -1,0 +1,51 @@
+# Doxyfile for Spanish Inquisition CMS
+# Project Information
+PROJECT_NAME           = "Spanish Inquisition CMS"
+PROJECT_NUMBER         = "0.1.0"
+PROJECT_BRIEF          = "Internal Court Management System of the Spanish Inquisition - Client-Server Architecture"
+OUTPUT_DIRECTORY       = "doxygen"
+CREATE_SUBDIRS         = NO
+ALLOW_UNICODE_NAMES    = YES
+OUTPUT_LANGUAGE        = English
+
+# Build Configuration
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_PRIV_VIRTUAL   = YES
+EXTRACT_PACKAGE        = YES
+EXTRACT_STATIC         = YES
+CASE_SENSE_NAMES       = NO
+OPTIMIZE_OUTPUT_JAVA   = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
+
+# Input Source Configuration
+INPUT                  = "README.md" \
+                         "../../api/src/main/java"
+USE_MDFILE_AS_MAINPAGE = "README.md"
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.java \
+                         *.c \
+                         *.h \
+                         *.HC \
+                         *.hc \
+                         *.md
+RECURSIVE              = YES
+EXCLUDE_PATTERNS       = */.git/* \
+                         */.gradle/* \
+                         */build/*
+
+# Mapping Holy C (.HC/.hc) files to C parser
+EXTENSION_MAPPING      = HC=C \
+                         hc=C
+
+# Output Formats
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+GENERATE_LATEX         = NO
+GENERATE_XML           = NO
+
+# Preprocessing & Diagrams
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+HAVE_DOT               = NO
