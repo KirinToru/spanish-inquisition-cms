@@ -20,7 +20,7 @@ The system operates on a distributed client-server architecture designed for cro
 
 ## Documentation Index
 
-- Backend API: Documented across Java package components under `com.example.api`.
+- Backend API: Documented across Java package components under `com.sic.api`.
 - Database Schema: Defined via relational entity models and Docker setup.
 
 ## Documentation Resources & Artifacts

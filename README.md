@@ -1,42 +1,25 @@
-<h1 align="center">Internal Court Management System of the Spanish Inquisition</h1>
-<h3 align="center">A Distributed Client-Server Content Management System</h3>
-<p align="center">
-<img src="https://img.shields.io/badge/Java-Backend-007396?style=flat-square&logo=java">
-<img src="https://img.shields.io/badge/Holy_C-Frontend-blue?style=flat-square">
-<img src="https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=flat-square&logo=postgresql">
-<a href="LICENSE"><img src="https://img.shields.io/badge/license-Source%20Available-informational?style=flat-square"/></a>
-</p>
+# Spanish Inquisition CMS
 
-**Internal Court Management System of the Spanish Inquisition** (Spanish Inquisition CMS) is a distributed client-server application natively targeting Windows and Linux (with macOS support as a potential future addition). It is designed to manage registrations, interrogations, and registries efficiently across platforms.
+A distributed client-server system for managing internal court records (heretic registrations, interrogations, and room inventory) of the Spanish Inquisition.
 
----
-
-### Contents
-
-- [Overview](#overview)
-- [Technical Documentation](docs/tech/README.md)
-- [Deployment Documentation](docs/deploy/README.md)
-- [User Documentation](docs/user/README.md)
-- [License](LICENSE)
-
----
-
-# Overview
-A distributed client-server architecture designed for cross-platform environments. 
-
-## Core Features
-
-### Must-haves
-- Heretic Registration
-- Interrogation Management
-- Sins Registry
-
-### Nice-to-haves
-- Stake Statistics
-- Interrogation Room Inventory
-- File Filtering
+[![Java](https://img.shields.io/badge/Java-Backend-007396?style=flat-square&logo=java)](api/)
+[![Holy C](https://img.shields.io/badge/Holy_C-Frontend-blue?style=flat-square)](app/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=flat-square&logo=postgresql)](api/docker-compose.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 ## Tech Stack
-- **Backend**: Java
-- **Frontend**: Holy C
-- **Database**: PostgreSQL
+- **Backend:** Java 17, Spring Boot 4
+- **Frontend:** Holy C (GTK-3)
+- **Database:** PostgreSQL 15 (Docker)
+
+## Quick Start
+1. **Database:** `docker compose -f api/docker-compose.yml up -d`
+2. **Backend:** `cd api && ./gradlew bootRun` (or `.\gradlew.bat bootRun` on Windows)
+3. **Frontend:** Run `app/basic_window.hc` in your Holy C environment
+
+## Documentation & Contributing
+- [Deployment Guide](docs/deploy/README.md)
+- [Technical Architecture](docs/tech/README.md)
+- [User Guide](docs/user/README.md)
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [License](LICENSE)

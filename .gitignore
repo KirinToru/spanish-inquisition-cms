@@ -36,12 +36,6 @@ ehthumbs.db
 Thumbs.db
 Desktop.ini
 
-# Antigravity IDE configuration and Tracking
-gemini_context.txt
-changelog.txt
-changelog.md
-.gemini/
-
 # Generated Documentation Artifacts (Doxygen, Swagger/OpenAPI)
 docs/tech/doxygen/
 **/doxygen/
