@@ -2,6 +2,7 @@
 
 A distributed client-server system for managing internal court records (heretic registrations, interrogations, and room inventory) of the Spanish Inquisition.
 
+[![Java Backend CI](https://github.com/KirinToru/spanish-inquisition-cms/actions/workflows/backend.yml/badge.svg)](https://github.com/KirinToru/spanish-inquisition-cms/actions/workflows/backend.yml)
 [![Java](https://img.shields.io/badge/Java-Backend-007396?style=flat-square&logo=java)](api/)
 [![Holy C](https://img.shields.io/badge/Holy_C-Frontend-blue?style=flat-square)](app/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=flat-square&logo=postgresql)](api/docker-compose.yml)

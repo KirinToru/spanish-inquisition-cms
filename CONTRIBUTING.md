@@ -32,8 +32,11 @@ Format:
 ## 4. Pull Requests (PRs)
 - **Target:** `main`
 - **Policy:** Never push directly to `main` and never self-merge.
-- **Reviewer:** Add **Maksym** as a mandatory reviewer.
-- Merge occurs only after approval and passing CI/build checks.
+- **Reviewer:** Add **KirinToru** as a mandatory reviewer.
+- **Automated CI:** Every PR automatically triggers GitHub Actions (`Java Backend CI`).
+  - Compilation and automated tests against PostgreSQL 15 must pass (green checkmark).
+  - If CI fails (red cross), open the **Checks** tab on the PR, inspect the build log, fix the issue locally, and push the update.
+- Merge occurs only after approval by **KirinToru** and passing CI checks.
 
 ## 5. Definition of Done (DoD)
 A task is **Done** when:
@@ -41,4 +44,4 @@ A task is **Done** when:
 2. Code compiles cleanly (`./gradlew build` for backend, Holy C runs for frontend).
 3. Unit and integration tests pass.
 4. Documentation is updated if architecture or features changed.
-5. PR is approved by **Maksym** and merged into `main`.
+5. PR is approved by **KirinToru** and merged into `main`.

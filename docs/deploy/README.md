@@ -35,6 +35,16 @@ Build production JAR:
 ```
 *(JAR located in `api/build/libs/`)*
 
+### Run via Pre-built CI Artifact (No Gradle required)
+If you do not have Gradle or a full dev setup locally:
+1. Open the GitHub repository and navigate to the **Actions** tab.
+2. Select the latest successful run of **Java Backend CI**.
+3. Under **Artifacts**, download `api-build-jar.zip` and extract the `.jar` file.
+4. Run directly:
+   ```bash
+   java -jar api-0.0.1-SNAPSHOT.jar
+   ```
+
 Verify health:
 ```http
 GET http://localhost:8080/ping

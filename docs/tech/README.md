@@ -9,6 +9,7 @@ The system operates on a distributed client-server architecture designed for cro
 - **Frontend**: Native client written in Holy C, engineered for ultra-responsive low-level interaction.
 - **Database**: PostgreSQL 15 relational database managed via Docker Compose.
 - **Network Layer**: Cross-platform TCP sockets (`Winsock` on Windows, standard POSIX sockets on Linux) issuing HTTP/1.1 requests from Holy C to the Spring Boot backend (`127.0.0.1:8080`).
+- **CI / Quality Assurance**: Automated GitHub Actions workflow (`backend.yml`) with a containerized PostgreSQL 15 service verifying compilation, test suites, and packaging artifacts on every PR.
 
 ## Core Modules
 
