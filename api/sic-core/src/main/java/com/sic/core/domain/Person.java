@@ -1,4 +1,4 @@
-package com.api.core.domain;
+package com.sic.core.domain;
 
 import jakarta.persistence.*;
 

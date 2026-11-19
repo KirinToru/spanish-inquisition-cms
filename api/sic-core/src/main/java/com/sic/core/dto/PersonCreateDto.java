@@ -1,4 +1,4 @@
-package com.api.core.dto;
+package com.sic.core.dto;
 
 public record PersonCreateDto(
         String firstName,
