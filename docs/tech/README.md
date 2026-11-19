@@ -8,6 +8,7 @@ The system operates on a distributed client-server architecture designed for cro
 - **Backend**: Built with Java 17 and Spring Boot framework, exposing REST endpoints.
 - **Frontend**: Native client written in Holy C, engineered for ultra-responsive low-level interaction.
 - **Database**: PostgreSQL 15 relational database managed via Docker Compose.
+- **Network Layer**: Cross-platform TCP sockets (`Winsock` on Windows, standard POSIX sockets on Linux) issuing HTTP/1.1 requests from Holy C to the Spring Boot backend (`127.0.0.1:8080`).
 
 ## Core Modules
 

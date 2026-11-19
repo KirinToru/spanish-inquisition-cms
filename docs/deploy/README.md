@@ -46,7 +46,8 @@ GET http://localhost:8080/ping
 Source files reside in `app/`:
 - Entry point: `app/basic_window.hc`
 - Required assets: `app/font.ttf`, `app/music.wav`
-- Run using a compatible Holy C runtime with GTK-3 support.
+- Run using a compatible Holy C runtime (such as `holyc-lang`) with GTK-3 support.
+- Communicates with the Spring Boot backend on `http://127.0.0.1:8080` via native TCP sockets.
 
 ---
 
