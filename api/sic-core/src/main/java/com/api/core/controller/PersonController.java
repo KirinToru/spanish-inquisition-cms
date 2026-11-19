@@ -1,8 +1,8 @@
-package com.sic.api.controller;
+package com.api.core.controller;
 
-import com.sic.api.dto.PersonCreateDto;
-import com.sic.api.dto.PersonResponseDto;
-import com.sic.api.service.PersonService;
+import com.api.core.dto.PersonCreateDto;
+import com.api.core.dto.PersonResponseDto;
+import com.api.core.service.PersonService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

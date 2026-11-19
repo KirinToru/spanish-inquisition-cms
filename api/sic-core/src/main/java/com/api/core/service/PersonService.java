@@ -1,9 +1,9 @@
-package com.sic.api.service;
+package com.api.core.service;
 
-import com.sic.api.domain.Person;
-import com.sic.api.dto.PersonCreateDto;
-import com.sic.api.dto.PersonResponseDto;
-import com.sic.api.repository.PersonRepository;
+import com.api.core.domain.Person;
+import com.api.core.dto.PersonCreateDto;
+import com.api.core.dto.PersonResponseDto;
+import com.api.core.repository.PersonRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

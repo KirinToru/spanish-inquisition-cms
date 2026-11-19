@@ -1,0 +1,23 @@
+plugins {
+    id 'org.springframework.boot'
+}
+
+description = 'api'
+
+dependencies {
+    implementation project(':sic-common')
+    implementation project(':sic-auth')
+    implementation project(':sic-core')
+
+    implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    runtimeOnly 'org.postgresql:postgresql'
+
+    // Раскомментируй, когда добавишь SQL-миграции в resources/db/migration
+    // implementation 'org.springframework.boot:spring-boot-starter-flyway'
+    // runtimeOnly 'org.flywaydb:flyway-database-postgresql'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
+    testImplementation 'org.springframework.boot:spring-boot-starter-data-jpa-test'
+}

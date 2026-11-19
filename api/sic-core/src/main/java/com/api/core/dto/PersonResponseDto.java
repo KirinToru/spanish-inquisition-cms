@@ -1,6 +1,6 @@
-package com.sic.api.dto;
+package com.api.core.dto;
 
-import com.sic.api.domain.Person;
+import com.api.core.domain.Person;
 
 public record PersonResponseDto(
         long id,

@@ -1,6 +1,6 @@
-package com.sic.api.repository;
+package com.api.core.repository;
 
-import com.sic.api.domain.Person;
+import com.api.core.domain.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
